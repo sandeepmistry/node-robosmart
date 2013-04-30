@@ -1,0 +1,25 @@
+{
+  "name": "robosmart",
+  "version": "0.0.1",
+  "description": "A node.js library for the RoboSmart",
+  "main": "index.js",
+  "scripts": {
+    "test": "jshint *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://sandeepmistry@github.com/sandeepmistry/node-robosmart"
+  },
+  "keywords": [
+    "robosmart",
+    "smart home labs"
+  ],
+  "author": "Sandeep Mistry <sandeep.mistry@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "noble": "0.0.5"
+  },
+  "devDependencies": {
+    "jshint": "~1.1.0"
+  }
+}
