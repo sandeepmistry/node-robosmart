@@ -11,7 +11,7 @@ Install
 npm install robosmart
 
 Usage
-_____
+-----
 
     var RoboSmart = require('robosmart');
 
