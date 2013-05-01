@@ -20,6 +20,7 @@
     "noble": "0.0.5"
   },
   "devDependencies": {
-    "jshint": "~1.1.0"
+    "jshint": "~1.1.0",
+    "async": "~0.2.7"
   }
 }
