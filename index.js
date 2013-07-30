@@ -43,16 +43,10 @@ Robosmart.prototype.disconnect = function(callback) {
   this._peripheral.disconnect(callback);
 };
 
-Robosmart.prototype.discoverServices = function(callback) {
-  this._peripheral.discoverServices([PUBLIC_SERVICE_UUID], function(error, services) {
+Robosmart.prototype.discoverServicesAndCharacteristics = function(callback) {
+  this._peripheral.discoverSomeServicesAndCharacteristics([PUBLIC_SERVICE_UUID], [], function(error, services, characteristics) {
     this._publicService = services[0];
 
-    callback();
-  }.bind(this));
-};
-
-Robosmart.prototype.discoverCharacteristics = function(callback) {
-  this._publicService.discoverCharacteristics([], function(error, characteristics) {
     for(var i in characteristics) {
       var characteristic = characteristics[i];
 

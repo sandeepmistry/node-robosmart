@@ -27,6 +27,10 @@ __Disconnect__
 
     roboSmart.disconnect(callback);
 
+__Discover Services and Characteristics__
+
+    roboSmart.discoverServicesAndCharacteristics(callback);
+
 __isOn__
 
     roboSmart.isOn(callback(on));

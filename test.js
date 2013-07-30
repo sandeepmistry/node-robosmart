@@ -9,12 +9,8 @@ RoboSmart.discover(function(roboSmart) {
       roboSmart.connect(callback);
     },
     function(callback) {
-      console.log('discoverServices');
-      roboSmart.discoverServices(callback);
-    },
-    function(callback) {
-      console.log('discoverCharacteristics');
-      roboSmart.discoverCharacteristics(callback);
+      console.log('discoverServicesAndCharacteristics');
+      roboSmart.discoverServicesAndCharacteristics(callback);
     },
     function(callback) {
       roboSmart.isOn(function(on) {
