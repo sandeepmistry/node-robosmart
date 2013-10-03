@@ -17,7 +17,7 @@ Usage
 
 __Discover__
 
-    RoboSmart.discover(callback(sensorTag));
+    RoboSmart.discover(callback(roboSmart));
 
 __Connect__
 
