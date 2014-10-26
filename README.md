@@ -1,6 +1,8 @@
 node-robosmart
 ==============
 
+[![Analytics](https://ga-beacon.appspot.com/UA-56089547-1/sandeepmistry/node-robosmart?pixel)](https://github.com/igrigorik/ga-beacon)
+
 A node.js library for the [RoboSmart](http://www.smarthome-labscom/#!about1/c218d) by [Smart Home Labs](http://www.smarthome-labs.com).
 
 Special thanks to [@mrose17](https://github.com/mrose17) for sending me a bulb!
