@@ -19,7 +19,11 @@ Usage
 
 __Discover__
 
-    RoboSmart.discover(callback(roboSmart));
+    RoboSmart.discover(callback(roboSmart)); //Discovers first bulb to respond
+
+__Discover Multiple__
+
+    RoboSmart.discoverAll(timeout, callback(devices)); //Returns array of devices discovered within timeout (2000ms seems adequate)
 
 __Connect__
 
