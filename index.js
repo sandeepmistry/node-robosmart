@@ -40,13 +40,17 @@ Robosmart.discoverAll = function(timeout, callback) {
   noble.once('stateChange', function() {
     noble.on('discover', function(peripheral) {
       var rs = new Robosmart(peripheral);
+
       devices.push(rs);
     });
+
     noble.startScanning([PUBLIC_SERVICE_UUID]);
+
     setTimeout(function(){
       noble.stopScanning();
+
       callback(devices);
-    },timeout);
+    }, timeout);
   });
 };
 
