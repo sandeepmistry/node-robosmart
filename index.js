@@ -35,6 +35,21 @@ Robosmart.discover = function(callback) {
   });
 };
 
+Robosmart.discoverAll = function(timeout, callback) {
+  var devices = [];
+  noble.once('stateChange', function() {
+    noble.on('discover', function(peripheral) {
+      var rs = new Robosmart(peripheral);
+      devices.push(rs);
+    });
+    noble.startScanning([PUBLIC_SERVICE_UUID]);
+    setTimeout(function(){
+      noble.stopScanning();
+      callback(devices);
+    },timeout);
+  });
+};
+
 Robosmart.prototype.connect = function(callback) {
   this._peripheral.connect(callback);
 };

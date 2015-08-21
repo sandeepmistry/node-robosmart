@@ -17,7 +17,7 @@
   "author": "Sandeep Mistry <sandeep.mistry@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "noble": "~0.2.0"
+    "noble": "~1.1.0"
   },
   "devDependencies": {
     "jshint": "~1.1.0",
