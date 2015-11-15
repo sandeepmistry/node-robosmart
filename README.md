@@ -35,6 +35,8 @@ __Disconnect__
 
 __Discover Services and Characteristics__
 
+**Must** be called after connecting, for other API's to work.
+
     roboSmart.discoverServicesAndCharacteristics(callback);
 
 __isOn__
